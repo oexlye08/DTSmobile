@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".profil">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        app:srcCompat="@drawable/man" />
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#9FFFFFFF"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username :" />
+
+        <TextView
+            android:id="@+id/showusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Nothing" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/membership"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Membership :" />
+
+        <TextView
+            android:id="@+id/show_membership"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Free Account" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

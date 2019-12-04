@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DTS Music</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="terms_conditions">By clicking SignUp you agree all the Terms and Conditions.</string>
+    <string name="belumdaftar">Belum mendaftar? Daftar disini</string>
+    <string name="isikan">Isikan Data Diri Anda</string>
+    <string name="namalengkap">Nama Lengkap</string>
+    <string name="email">E-mail</string>
+    <string name="nomortelpon">Nomor Telepon</string>
+    <string name="password">Password</string>
+    <string name="dialog">SELAMAT BERGABUNG DI APLIKASI DTS MUSIC</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <string-array name="jk">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+</resources>

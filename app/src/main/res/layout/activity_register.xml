@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/isikan"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/namalengkap"
+        android:inputType="textCapWords" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" />
+
+    <EditText
+        android:id="@+id/userEmailId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" />
+
+    <EditText
+        android:id="@+id/mobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/nomortelpon"
+        android:inputType="phone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/gembok"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" />
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/confirm_password"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/gender" />
+
+
+        <RadioButton
+            android:id="@+id/laki"
+            style="?android:attr/spinnerDropDownItemStyle"
+            android:layout_width="133dp"
+            android:layout_height="36dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/transparent"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:text="Laki - laki"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <RadioButton
+            android:id="@+id/pr"
+            style="?android:attr/spinnerDropDownItemStyle"
+            android:layout_width="192dp"
+            android:layout_height="36dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/transparent"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:text="Perempuan"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/terms_conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="@string/terms_conditions"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="358dp"
+        android:layout_height="115dp"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="423dp">
+
+        <Button
+            android:id="@+id/signUp"
+            android:layout_width="256dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/register"
+            android:gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>
